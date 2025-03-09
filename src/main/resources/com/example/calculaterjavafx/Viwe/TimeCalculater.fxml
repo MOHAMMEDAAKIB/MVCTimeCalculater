@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculaterjavafx.Controller.TimeCalculaterController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="307.0">
+         <top>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="322.0" text="Time Calculater" textAlignment="CENTER" textFill="#274472" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <VBox prefHeight="348.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="display" alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="297.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="297.0" text="Enter Time: " textFill="#274472">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="enterTimeOnAction" promptText="HH:MM:SS">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <Label prefHeight="14.0" prefWidth="297.0" text="Exit Time" textFill="#274472">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="ExitTimeOnAction" promptText="HH:MM:SS">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <Label prefHeight="26.0" prefWidth="297.0" text="Allocate Time" textFill="#274472">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="AllocateTime" promptText="HH:MM">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <Label fx:id="states" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="307.0" />
+                  <HBox prefHeight="31.0" prefWidth="307.0">
+                     <children>
+                        <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#UsedTimeOnAction" prefHeight="27.0" prefWidth="73.0" style="-fx-background-color: #41729F;" text=" Used Time" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#CurrentTimeOnAction" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #41729F;" text="Current Time" textFill="WHITE">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#CheckOnAction" style="-fx-background-color: #41729F;" text="Check" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
